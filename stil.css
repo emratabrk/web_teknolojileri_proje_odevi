@@ -1,0 +1,34 @@
+#Hakkımda{
+    margin: 0px 150px;
+    padding: 30px;
+    overflow: auto;
+    word-wrap: break-word;
+    border: 5px solid white;
+    border-radius: 5px;
+}
+#hobiler{
+    margin: 0px 150px;
+    padding: 30px;
+    overflow: auto;
+    
+    border: 5px solid white;
+    border-radius: 5px;
+}
+/*
+.alt_hobiler{
+    max-width: 200px ;
+}
+.alt_hobiler img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+    float: left;
+    
+}
+*/
+.alt_hobiler img{
+    width: 200px;
+    margin-bottom: 40px;
+    
+}
+
