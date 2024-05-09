@@ -1,0 +1,14 @@
+#sinop_fotograf{
+    background-color:antiquewhite;
+    width: 100%;
+    height:100%;/* İstediğiniz yüksekliği buradan ayarlayabilirsiniz */
+    overflow: hidden;
+    position: relative;
+}
+#sinop_fotograf img{
+    min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: 100%; /* Değişiklik burada */
+  object-fit: cover;
+}
