@@ -1,0 +1,45 @@
+#Hakkımda{
+    margin: 0px 150px;
+    padding: 30px;
+    overflow: auto;
+    word-wrap: break-word;
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: white;
+    
+    
+}
+#Hakkımda img{
+    float: left;
+    margin-right: 30px;
+    max-width: 50%;
+}
+#Hakkımda i{
+    float: right;
+    font-size: 30px;
+    margin-right: 10px;
+
+}
+#hobiler{
+    margin: 0px 150px;
+    padding: 30px;
+    overflow: auto;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+#resim_container img{
+    float: left;
+    max-width: 25%;
+   max-height: 25%;
+   border: 2px solid black;
+}
+#hobi_bilgi{
+    margin: 0px 150px;
+    padding: 30px;
+    overflow: auto;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
