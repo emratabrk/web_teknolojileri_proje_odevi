@@ -1,0 +1,14 @@
+.submitted-data {
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    width: 500px;
+    box-shadow: 0 0 20px 0 #999;
+}
+.submitted-data h3 {
+    margin-top: 0;
+}
+.submitted-data p {
+    margin: 10px 0;
+}

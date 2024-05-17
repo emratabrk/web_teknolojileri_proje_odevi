@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submitted</title>
+    <link rel="stylesheet" href="stil_dosyası/form.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+<body>
+    <div id="app" class="submitted-data">
+        <h3>Gönderilen Veriler:</h3>
+        <p><strong>İsim-Soyisim:</strong> {{ form.name }}</p>
+        <p><strong>E-Mail:</strong> {{ form.email }}</p>
+        <p><strong>Telefon No:</strong> {{ form.phone }}</p>
+        <p><strong>Zaman:</strong> {{ form.time }}</p>
+        <p><strong>Tarih:</strong> {{ form.date }}</p>
+        <p><strong>Mesaj:</strong> {{ form.message }}</p>
+    </div>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                form: {
+                    name: '',
+                    email: '',
+                    phone: '',
+                    time: '',
+                    date: '',
+                    message: ''
+                }
+            },
+            created() {
+                const urlParams = new URLSearchParams(window.location.search);
+                this.form.name = urlParams.get('name');
+                this.form.email = urlParams.get('email');
+                this.form.phone = urlParams.get('phone');
+                this.form.time = urlParams.get('time');
+                this.form.date = urlParams.get('date');
+                this.form.message = urlParams.get('message');
+            }
+        });
+    </script>
+</body>
+</html>
