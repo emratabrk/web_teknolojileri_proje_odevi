@@ -26,7 +26,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Hoşgeldiniz b231210080";
     } else {
         echo "Kullanıcı adı veya şifre yanlış.";
-        header("refresh:5;login.html");
+        echo '<script>
+                setTimeout(function(){
+                    window.location.href = "login.html";
+                }, 5000);
+              </script>';
         exit;
     }
 } else {

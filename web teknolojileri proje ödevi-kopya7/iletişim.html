@@ -84,16 +84,16 @@
                     message: ''
                 },
                 error: '',
-                valid: false // Formun geçerli olup olmadığını tutan bayrak
+                valid: false 
             },
             methods: {
                 validateForm(type) {
                     this.error = '';
-                    this.valid = true; // Her iki doğrulamada da bu bayrağı true yapıyoruz
+                    this.valid = true; 
 
                     if (!this.form.name || !this.form.email || !this.form.phone || !this.form.time || !this.form.date || !this.form.message) {
                         this.error = 'Lütfen tüm alanları doldurun.';
-                        this.valid = false; // Hatalıysa false yapıyoruz
+                        this.valid = false; 
                         return;
                     }
                     
@@ -101,7 +101,7 @@
                         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                         if (!emailPattern.test(this.form.email)) {
                             this.error = 'Lütfen geçerli bir e-posta adresi girin.';
-                            this.valid = false; // Hatalıysa false yapıyoruz
+                            this.valid = false; 
                         }
                     }
 
@@ -110,7 +110,7 @@
                     }
                 },
                 handleSubmit() {
-                    this.validateForm('advanced'); // İleri düzey doğrulama yapıyoruz
+                    this.validateForm('advanced'); 
                     if (this.valid) {
                         const queryString = Object.keys(this.form)
                             .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(this.form[key]))
@@ -130,7 +130,7 @@
                         message: ''
                     };
                     this.error = '';
-                    this.valid = false; // Sıfırlama sırasında bu bayrağı da false yapıyoruz
+                    this.valid = false; 
                 }
             }
         });
